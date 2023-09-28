@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="uft-8">
+    <meta name="viewport" content="width=divice-width, intial-scale=1">
+    <link rel="icon" type="image/x-icon" href="./images/bann_img.png">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>APPLY HERE!!!</title>
+</head>
+
+<body>
+    <!-- begin nav bar header-->
+    <header>
+        <nav id="menu">
+            <label for="tm" id="toggleMenu">Links Navigation <i class="fa fa-arrow-down" aria-hidden="true"></i></label>
+            <input type="checkbox" id="tm">
+            <ul class="mainMenu">
+                <li>
+                    <h1 class="logo"><a href="./index.html">l:on</a></h1>
+                </li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./jobs.html">Jobs</a></li>
+                <li><a target="_blank" href="https://www.youtube.com/watch?v=VUbh9uMxzNA">Video</a></li>
+                <li><a href="#">More
+                        <i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+                    <label title="Toggling Drop-Down" class="dropIcon" for="sub-m1"><i class="fa fa-arrow-down"
+                            aria-hidden="true"></i></label>
+
+                    <input type="checkbox" id="sub-m1">
+                    <!--the name in id tag from input needs to link the label with the same name in for-->
+                    <ul class="subMenu">
+                        <li><a href="#contact_info">Contact</a></li>
+                        <li><a href="./enhancement.html">Enhancement</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- end nav bar header-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="H1">
+        <h1 id="hh1">Apply Information</h1>
+        <h2>Please enter the information below:</h2>
+    </section>
+    <br>
+    <br>
+    <!-- apply -->
+    <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" target="_blank">
+        <fieldset>
+            <!-- Personal Details -->
+            <legend>Personal Details</legend>
+            <p>Name</p>
+            <p><label for="givenname"></label>
+                <input type="text" name="givenname" id="givenname" maxlength="20" size="20" required="required"
+                    placeholder="First" pattern="([a-z][A-Z]){,20}" />
+                <label for="middlename"></label>
+                <input type="text" name="middlename" id="middlename" maxlength="20" size="20" placeholder="Middle"
+                    pattern="([a-z][A-Z]){,20}" />
+                <label for="familyname"></label>
+                <input type="text" name="familyname" id="familyname" maxlength="20" size="20" required="required"
+                    placeholder="Last" pattern="([a-z][A-Z]){,20}" />
+            </p>
+            <p>Date of birth</p>
+            <p><label for="dateofbirth"></label>
+                <input type="date" name="dateofbirth" id="dateofbirth" maxlength="5" size="20" required="required">
+            </p>
+            <p>Email</p>
+            <p><label for="email"></label>
+                <input type="email" name="email" id="email" maxlength="50" size="20" required="required"
+                    placeholder="example@">
+            </p>
+            <p>Phone number</p>
+            <p><label for="phonenum"></label>
+                <input type="text" name="phonenum" id="phonenum" maxlength="20" size="20" required="required"
+                    pattern="[0-9]{8,12}">
+            </p>
+            <fieldset>
+                <legend>Sex</legend>
+                <p><label for="male">Male</label>
+                    <input type="radio" id="male" name="sex" value="male" />
+                </p>
+                <p><label for="female">Female</label>
+                    <input type="radio" id="female" name="sex" value="female" />
+                </p>
+            <!---End Personal Details--->
+            </fieldset>
+            <fieldset>
+                <!---Address--->
+                <legend>Address</legend>
+                <p>Street</p>
+                <p>
+                    <input type="text" name="street" id="street" maxlength="30" size="40" required="required"
+                        pattern="{,40}">
+                </p>
+                <p>Suburb/town</p>
+                <p>
+                    <input type="text" name="sub_t" id="sub_t" maxlength="30" size="40" required="required"
+                        pattern="{,40}">
+                </p>
+                <p>State</p>
+                <p>
+                    <select name="state" id="state">
+                        <option value="temp">Select a State</option>
+                        <option value="vic">VIC</option>
+                        <option value="nsw">NSW</option>
+                        <option value="qld">QLD</option>
+                        <option value="nt">NT</option>
+                        <option value="wa">WA</option>
+                        <option value="sa">SA</option>
+                        <option value="tas">TAS</option>
+                        <option value="act">ACT</option>
+                    </select>
+                </p>
+                <p>Postcode</p>
+                <p>
+                    <input type="text" name="postcode" id="postcode" maxlength="10" size="10" required="required"
+                        pattern="[0-9]{4,4}">
+                </p>
+                <!---End Address--->
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <!---Jobs detail--->
+            <legend>Job apply details</legend>
+            <p>Reference number</p>
+            <select name="refnum" id="refnum" required>
+                <option value="temp">Select Reference Number</option>
+                <option value="1">WD567 - Web Developer</option>
+                <option value="2">PR132 - Programmer</option>
+            </select>
+            <fieldset>
+                <legend>Skill required list</legend>
+                <p>
+                    <label class="skill" for="Skill">HTML/CSS skills</label>
+                    <input type="checkbox" id="skill" name="Skill1" value="html/css" />
+                </p>
+                <p>
+                    <label class="skill" for="Skill">Analytical skills</label>
+                    <input type="checkbox" id="skill" name="Skill2" value="Analytical" />
+                </p>
+                <p>
+                    <label class="skill" for="Skill">Responsive design skills</label>
+                    <input type="checkbox" id="skill" name="Skill3" value="responsive design" />
+                </p>
+                <p>
+                    <label class="skill" for="Skill">JavaScript skills</label>
+                    <input type="checkbox" id="skill" name="Skill4" value="JavaScript" />
+                </p>
+                <p>
+                    <label class="skill" for="Skill">Interpersonal skills</label>
+                    <input type="checkbox" id="skill" name="Skill5" value="Interpersonal" />
+                </p>
+                <p>
+                    <label class="skill" for="Skill">Testing and debugging skills</label>
+                    <input type="checkbox" id="skill" name="Skill6" value="test/debug" />
+                <p>
+                    <label class="skill" for="Skill">Search engine optimization</label>
+                    <input type="checkbox" id="skill" name="Skill7" value="SEO" />
+                </p>
+                <p>
+                    <label class="skill" for="Skill">Willing to update knowledge as technology changes</label>
+                    <input type="checkbox" id="skill" name="Skill8" value="update knowledge as technology changes" />
+                </p>
+                <p>
+                    <label class="skill" for="Skill">Aptitude for technical activities</label>
+                    <input type="checkbox" id="skill" name="Skill9" value="update knowledge as technology changes" />
+                </p>
+                <p>
+                    <label class="skill" for="Skill">Logical approach to the solution of problems</label>
+                    <input type="checkbox" id="skill" name="Skill10" value="update knowledge as technology changes" />
+                </p>
+                <p>
+                    <label class="skill" for="Skill">Able to work independently or as part of a team</label>
+                    <input type="checkbox" id="skill" name="Skill11" value="update knowledge as technology changes" />
+                </p>
+                <p>
+                    <label class="skill" for="Skill">Good communication skills</label>
+                    <input type="checkbox" id="skill" name="Skill12" value="update knowledge as technology changes" />
+                </p>
+                <!--- end Jobs detail--->
+            </fieldset>
+            <fieldset>
+                <!---Other--->
+                <legend>Other</legend>
+                <textarea name="Other" id="Other" cols="100" rows="10"></textarea>
+                <!---End Other--->
+            </fieldset>
+            <br>
+            <input type="submit" value="APPLY">
+        </fieldset>
+    </form>
+    <!--End Apply-->
+    <!-- footer -->
+    <footer>
+        <section class="footer">
+            <section class="copyright">
+                <section class="footerBottom">
+                    <section class="img">
+                        <img src="./images/indigenous-acknowledgement.png" alt="Australian Aboriginal Flag">
+                        <figcaption>Australian Aboriginal Flag</figcaption>
+                    </section>
+                    <p>We respecfully honor the land from the traditional owners on which
+                        Australia's Swinburne campus is situated in Melbourne's East and Far East,
+                        the Wurundjeri tribe alongside their past and present elders.</p>
+                    <p>Copyright 2023 - All Right Reserved By<a href="#"> Pho Bo Team</a></p>
+                </section>
+            </section>
+
+            <section class="footerContentWrapper">
+                <section class="footer-col large-w-25 small-w-50 tiny-w-100 tt-l flt">
+                    <h3>l:on</h3>
+                    <h4>Melbourne</h4>
+                    <p>Swinburne University of Technology, John Street, Hawthorn, VIC, 3122</p>
+                    <a href="#">Click for Direction</a>
+                </section>
+                <section class="footer-col large-w-25 small-w-50 tiny-w-100 tt-l flt">
+                    <h3>Pages</h3>
+                    <a href="./about.html">About Us</a>
+                    <a href="#">Job</a>
+                    <a href="./enhancement.html">Enhancement</a>
+                </section>
+                <section class="footer-col large-w-25 small-w-50 tiny-w-100 tt-l flt" id="contact_info">
+                    <h3>Contact</h3>
+                    <a href="mailto:contactphongporter@gmail.com"> <i class="far fa-envelope-open"></i>Company email</a>
+                    <h4>Team member</h4>
+                    <a href="mailto:104334842@student.swin.edu.au"> <i class="far fa-envelope-open"></i>Phong-Leader
+                        email</a>
+                    <a href="mailto:104215581@student.swin.edu.au"> <i class='far fa-envelope-open'></i>Phuc-Otis (team
+                        member) email</a>
+                    <a href="mailto:104860583@student.swin.edu.au"> <i class="far fa-envelope-open"></i>Quan-Harry (team
+                        member) email</a>
+
+                </section>
+                <section class="footer-col large-w-25 small-w-50 tiny-w-100 tt-l flt">
+                    <h3>Social Media</h3>
+                    <section class="roundedSocialBtns">
+                        <a class="socialBtn facebook" href="https://www.facebook.com/swinburneuniversityoftechnology/"
+                            target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="socialBtn twitter" href="https://twitter.com/Swinburne" target="_blank"><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="socialBtn linkedin" href="https://www.linkedin.com/Swinburne" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a class="socialBtn youtube" href="https://www.youtube.com/Swinburne" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="socialBtn instagram" href="https://www.instagram.com/Swinburne" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                    </section>
+                </section>
+            </section>
+            <section class="clearfix"></section>
+        </section>
+    </footer>
+    <!-- end footer -->
+</body>
